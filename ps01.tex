@@ -1,96 +1,64 @@
-\documentclass[10pt]{article}
- 
-\usepackage[margin=1in]{geometry} 
+\documentclass{exam}
+
+\usepackage{geometry} 
 \usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
 
- 
+
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
- 
+
 \newenvironment{problem}[2][Problem]{\begin{trivlist}
-\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+  \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 
 \newenvironment{definition}[2][Definition]{\begin{trivlist}
-    \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+  \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 
 \begin{document}
 
-\title{CS/MATH 113 -- Problem Set 1}
-\author{Habib University -- Spring 2023}
+\title{Problem Set 1\\ CS/MATH 113 Discrete Mathematics}
+\author{Habib University | Spring 2023}
 \date{Week 01}
 \maketitle
 
-\section{Definitions}
+\section*{Definitions}
+\begin{description}
+\item [Integer]
+  An \textit{integer} is a number with no decimal or fractional part and it includes negative and positive numbers, including zero.
+\item[Even Integer]
+  An integer is \textit{even} if it can be written as $2k$ where $k$ is an integer.
+\item[Odd Integer]
+  An integer is \textit{odd} if it can be written as $2k+1$ where $k$ is an integer.
+\item[Parity]
+  The \textit{parity} of an integer is its property of being even or odd.
+\item[Natural Number]
+  A \textit{natural number} is any positive numbers from $1$ to $\infty$.
+\item[Rational Number]
+  A \textit{rational numbers} is any number that can be expressed in the form $\frac{a}{b}$ where $a$ and $b$ are integers, and $b \neq  0$.
+\item[Divisibility]
+  A nonzero integer $m$ \textit{divides} an integer $n$ provided that there is an integer $q$ such that $n=mq$. We say that $m$ is a \textit{divisor} or \textit{factor} of $n$, denoted as $ m \mid n$.
+\end{description}
 
+\hrule
 
-\begin{definition}{1}(Integer)
-    An integer is a number with no decimal or fractional part and it includes negative and positive numbers, including zero.
-\end{definition}
+\begin{questions}
 
+  \question Using the definitions above, prove or provide a counterexample for each of the following claims.
+  \begin{parts}
+    \part The sum of two odd integers is even.
+    \part The product of two even integers is even.
+    \part The sum of two positive integers of the same parity is even.
+    \part Given integers, $a, b, x$, if $a+b$ is odd, then both $a+x$ and $b+x$ are odd.
+    \part The square of a natural number is a natural number.
+    \part The product of two rational numbers is a rational number.
+    \part The square of a rational number is a rational number.
+    \part The sum of three consecutive integers (positive or negative) is divisible by $3$.
+    \part The product two even integers is divisible by $4$.
+    \part The product of four consecutive integers (positive or negative) is divisible by $8$.
+    \part The product of five consecutive integers is divisible by $120$.
+    \part If $m \mid (a-b) $, then  $m\mid a$ and $m\mid b$.
+    \part If $n$ is an odd integer, then $6 \mid (3n + 3)$.
+  \end{parts}
 
-\begin{definition}{2}(Even Integer)
-    An integer is even if it can be written as $2k$ where $k$ is an integer.
-\end{definition}
-
-\begin{definition}{3}(Odd Integer)
-    An integer is even if it can be written as $2k+1$ where $k$ is an integer.
-\end{definition}
-
-\begin{definition}{4}(Parity)
-    The parity of an integer is its property of being even or odd.
-\end{definition}
-
-\begin{definition}{5}(Natural Numbers)
-    Natural numbers are a set of positive numbers from $1$ to $\infty$
-\end{definition}
-
-\begin{definition}{6}(Rational Numbers)
-    Rational numbers are any numbers that can be expressed in the form $\frac{a}{b}$ where $a$ and $b$ are integers, and $b \neq  0$
-\end{definition}
-
-\begin{definition}{7}(Divisiblity)
-    A nonzero integer $m$ divides an integer $n$ provided that there is an integer $q$ such that $n=mq$. We say that $m$ is a divisor of $n$
-    and that $m$ is a factor of $n$ and use the notation $ m | n$
-\end{definition}
-\section{Problems}
-Using the definitions above solve the following problems.
-\begin{problem}{1}
-Prove that the sum of two odd integers is even.
-\end{problem}
-\begin{problem}{2}
-Prove that the product of two even integers is even.
-\end{problem}
-\begin{problem}{3}
-Prove that the product of any two rational numbers is also a rational number.
-\end{problem}
-\begin{problem}{4}
-Prove that the square of any natural number is also a natural number.
-\end{problem}
-\begin{problem}{5}
-Prove that the square of any rational number is also a rational number.
-\end{problem}
-\begin{problem}{6}
-In each case either prove the statement or find a counterexample.
-\begin{itemize}
-    \item[(a)] The sum of any three consecutive integers (positive or negative) is divisible by $3$.
-    \item[(b)] The product any two even integers is divisible by $4$.
-    \item[(c)] The product of any four consecutive integers (positive or negative) is divisible by $8$.
-    \item[(d)] If $a - b$ has remainder 0 when divided by $m$, then $a$ and $b$ have remainders $0$ when divided by $m$.
-    \item[(e)] If $n$ is an odd integer, then $3n + 3$ is divisible by $6$
-\end{itemize}
-\end{problem}
-\begin{problem}{7}
-Prove that the product of five consecutive integers is divisible by 120.
-\end{problem}
-\begin{problem}{8}
-Prove that the sum of two postive integers of the same parity (odd/even) is even.
-\end{problem}
-\begin{problem}{9}
-Prove or disprove that if $a+b$ is an odd integer, then both $a+x$ and $b+x$ are odd integers,
-where $a,b$, and $x$ are integers.
-\end{problem}
-
-
-
+\end{questions}
 
 \end{document}
