@@ -1,0 +1,113 @@
+\documentclass[10pt]{article}
+
+\usepackage{url}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{definition}[2][Definition]{\begin{trivlist}
+    \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+
+\title{CS/MATH 113 -- Problem Set 2}
+\author{Habib University -- Spring 2023}
+\date{Week 02}
+\maketitle
+
+\section{Problems}
+
+\begin{problem}{1}
+Let $p$ and $q$ be the proposition
+\begin{itemize}
+    \item[$p:$] The election is decided.
+    \item[$q:$] The votes have been counted.
+\end{itemize}
+Express each of these compound propositions as an English sentence.
+
+\begin{itemize}
+    \item[(a)] $\neg p$
+    \item[(b)] $p \lor q$
+    \item[(c)] $\neg p \land q $
+    \item[(d)] $q \implies p $
+    \item[(e)] $ \neg q \implies \neg p $
+    \item[(f)] $\neg p \implies \neg q$
+    \item[(g)] $p \leftrightarrow q$
+    \item[(h)] $\neg q \lor (\neg p \land q) $
+\end{itemize}
+\end{problem}
+\begin{problem}{2}
+Let $p$ and $q$ be the proposition
+\begin{itemize}
+    \item[$p:$] It is below freezing.
+    \item[$q:$] It is snowing.
+\end{itemize}
+
+Write these propositions using $p$ and $q$ and logical connectives (including negations)
+
+\begin{itemize}
+    \item [(a)] It is below freezing and snowing.
+    \item [(b)] It is below freezing but not snowing.
+    \item [(c)] It is not below freezing and it is not snowing.
+    \item [(d)] It is either snowing or below freezing (or both).
+    \item [(e)] If it is below freezing, it is also snowing.
+    \item [(f)] Either it is below freezing or it is snowing, but it is
+          not snowing if it is below freezing.
+    \item [(g)] That it is below freezing is necessary and sufficient
+          for it to be snowing.
+\end{itemize}
+
+\end{problem}
+
+\begin{problem}{3}
+Construct a truth table for each of these compound propositions.
+\begin{itemize}
+    \item[(a)] $ p \land \neg p$
+    \item[(b)] $ p \lor \neg p$
+    \item[(c)] $ (p \lor \neg q) \implies  q$
+    \item[(d)] $ (p \lor q) \implies (p \land q) $
+    \item[(e)] $ (p \implies q) \leftrightarrow (\neg q \implies \neg p) $
+    \item[(f)] $ (p \implies q) \implies (p \implies q) $
+\end{itemize}
+
+\end{problem}
+
+\begin{problem}{4}
+In an Island there are two kinds of inhabitants, knights, who always tell the truth, and knaves, who always lie. You encounter two people
+A and B. Determine, if possible, what A and B are if they address you in the ways described.
+\begin{itemize}
+    \item[(a)] A says ``At least one of us is a knave'' and B says nothing.
+    \item[(b)] A says ``The two of us are both knights'' and B says ``A is a knave''. 
+    \item[(c)] A says ``I am a knave or B is a knight'' and B says nothing.
+    \item[(d)] Both A and B say ``I am a knight''
+    \item[(e)] A says we ``We are both knaves '' and B says nothing. 
+\end{itemize}
+\end{problem}
+
+\begin{problem}{5}
+    Sheikh Chilly, famous for his bizarre sense of humor and love of logic puzzles, left the following clues
+regarding the location of the hidden treasure. The treasure can only be in one place.
+\begin{itemize}
+    \item If the house is next to a lake, then the treasure is in the kitchen.
+    \item If the house is not next to a lake or the treasure is buried under the flagpole, then the tree in the front yard is an elm and the tree in the back yard is not an oak.
+    \item If the treasure is in the garage, then the tree in the back yard is not an oak.
+    \item If the treasure is not buried under the flagpole, then the tree in the front yard is not an elm.
+    \item The treasure is not in the kitchen.
+\end{itemize}
+Using rules of inference, determine where the treasure is hidden. Clearly state what your propositions
+represent.
+\end{problem}
+
+
+
+
+
+
+\end{document}

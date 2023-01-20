@@ -6,3 +6,8 @@
 *.fdb_latexmk
 *.aux
 *.out
+.DS_Store
+auto/
+solution/
+__pycache__/
+
