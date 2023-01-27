@@ -109,23 +109,23 @@ Find a counterexample, if possible, to these universally quantified statements, 
 \end{problem}
 
 \begin{problem}{9}
-Determine whether $\forall x (P(x) \implies Q(x))$ and $\forall P(x) \implies \forall Q(x)$ are logically equivalent. Justify your answer.
+Determine whether $\forall x (P(x) \implies Q(x))$ and $\forall x P(x) \implies \forall x Q(x)$ are logically equivalent. Justify your answer.
 \end{problem}
 
 \begin{problem}{10}
-Determine whether $\forall x (P(x) \leftrightarrow Q(x))$ and $\forall P(x) \leftrightarrow \forall Q(x)$ are logically equivalent. Justify your answer.
+Determine whether $\forall x (P(x) \leftrightarrow Q(x))$ and $\forall x P(x) \leftrightarrow \forall x Q(x)$ are logically equivalent. Justify your answer.
 \end{problem}
 
 \begin{problem}{11}
-Show that  $\exists x (P(x) \lor Q(x))$ and $\exists P(x) \lor \exists Q(x)$ are logically equivalent.
+Show that  $\exists x (P(x) \lor Q(x))$ and $\exists x P(x) \lor \exists x Q(x)$ are logically equivalent.
 \end{problem}
 
 \begin{problem}{12}
-Show that  $\forall x P(x) \lor \forall Q(x)$ and $\forall (P(x) \lor Q(x))$ are not logically equivalent.
+Show that  $\forall x P(x) \lor \forall Q(x)$ and $\forall x (P(x) \lor Q(x))$ are not logically equivalent.
 \end{problem}
 
 \begin{problem}{13}
-Show that  $\exists x P(x) \land \exists Q(x)$ and $\exists (P(x) \land Q(x))$ are not logically equivalent.
+Show that  $\exists x P(x) \land \exists x Q(x)$ and $\exists x (P(x) \land Q(x))$ are not logically equivalent.
 \end{problem}
 
 \begin{problem}{14}
@@ -138,52 +138,52 @@ Transalate these statements into English, where the domain for each variable con
 \end{problem}
 
 \begin{problem}{15}
-    Let $Q(x,y)$ be the statement ``x has sent an e-mail message to y,'' where the domain for both $x$ and $y$ consists of all students in your class. Express each of these quantifications in English.
-    \begin{itemize}
-        \item[(a)] $\exists x \exists y Q(x,y)$
-        \item[(b)] $\exists x \forall y Q(x,y)$ 
-        \item[(c)] $\forall x \exists y Q(x,y)$
-        \item[(d)] $\exists y \forall x Q(x,y)$ 
-        \item[(e)] $\forall y \exists x Q(x,y)$
-        \item[(f)] $\forall y \forall x Q(x,y)$
-    \end{itemize}
+Let $Q(x,y)$ be the statement ``x has sent an e-mail message to y,'' where the domain for both $x$ and $y$ consists of all students in your class. Express each of these quantifications in English.
+\begin{itemize}
+    \item[(a)] $\exists x \exists y Q(x,y)$
+    \item[(b)] $\exists x \forall y Q(x,y)$
+    \item[(c)] $\forall x \exists y Q(x,y)$
+    \item[(d)] $\exists y \forall x Q(x,y)$
+    \item[(e)] $\forall y \exists x Q(x,y)$
+    \item[(f)] $\forall y \forall x Q(x,y)$
+\end{itemize}
 \end{problem}
 
 \begin{problem}{16}
-    Let $Q(x,y)$ be the statement ``Student x has been a contestant on quiz show y.'' Express each of these sentences in terms of $Q(x,y)$, quantifiers, and logical connectives, where the domain for $x$ consists of all 
-    the students at your school and for $y$ consists of all quiz shows on telivision.
-    \begin{itemize}
-        \item[(a)] There is a student at your school who has been a contestant on a television quiz show.
-        \item[(b)] No student at your school has ever been a contestant on a television quiz show.
-        \item[(c)] There is a student at your school who has been a contestant on \textit{Jeopardy!} and on \textit{Wheel of Fortune.} 
-        \item[(d)] Every television quiz show has had a student from your school as a contestant.
-        \item[(e)] At least two students from your school have been contestants on \textit{Jeopardy!}. 
-    \end{itemize}
-    
+Let $Q(x,y)$ be the statement ``Student x has been a contestant on quiz show y.'' Express each of these sentences in terms of $Q(x,y)$, quantifiers, and logical connectives, where the domain for $x$ consists of all
+the students at your school and for $y$ consists of all quiz shows on telivision.
+\begin{itemize}
+    \item[(a)] There is a student at your school who has been a contestant on a television quiz show.
+    \item[(b)] No student at your school has ever been a contestant on a television quiz show.
+    \item[(c)] There is a student at your school who has been a contestant on \textit{Jeopardy!} and on \textit{Wheel of Fortune.}
+    \item[(d)] Every television quiz show has had a student from your school as a contestant.
+    \item[(e)] At least two students from your school have been contestants on \textit{Jeopardy!}.
+\end{itemize}
+
 \end{problem}
 
 \begin{problem}{17}
-    Rewrite each of these statements so that negations apper only within predicates (that is, so that no negation is outside a quantifier or an expression involving logical connectives)
-    \begin{itemize}
-        \item[(a)] $\neg \exists y \exists x P(x,y)$
-        \item[(b)] $\neg \forall x \neg \exists y P(x,y)$
-        \item[(c)] $\neg \exists y(Q(y) \land \forall x \neg R(x, y))$
-        \item[(d)] $\neg \exists y(\exists x R(x, y) \lor \forall x S(x, y))$
-        \item[(e)] $\neg \exists y(\forall x \exists z T(x, y, z) \lor \exists x \forall z U(x, y, z))$
-    \end{itemize}
-    
+Rewrite each of these statements so that negations apper only within predicates (that is, so that no negation is outside a quantifier or an expression involving logical connectives)
+\begin{itemize}
+    \item[(a)] $\neg \exists y \exists x P(x,y)$
+    \item[(b)] $\neg \forall x \neg \exists y P(x,y)$
+    \item[(c)] $\neg \exists y(Q(y) \land \forall x \neg R(x, y))$
+    \item[(d)] $\neg \exists y(\exists x R(x, y) \lor \forall x S(x, y))$
+    \item[(e)] $\neg \exists y(\forall x \exists z T(x, y, z) \lor \exists x \forall z U(x, y, z))$
+\end{itemize}
+
 \end{problem}
 
 \begin{problem}{18}
-    Determine the truth value of each of these statements if the domain of each variable consists of all real numbers.
-    \begin{itemize}
-        \item[(a)] $\forall x \exists y (x^2=y)$
-        \item[(b)] $\forall x \exists y (x = y^2)$
-        \item[(c)] $\exists x \forall y (xy=0) $
-        \item[(d)] $\exists x \exists y (x + y \neq y + x) $  
-    \end{itemize}
+Determine the truth value of each of these statements if the domain of each variable consists of all real numbers.
+\begin{itemize}
+    \item[(a)] $\forall x \exists y (x^2=y)$
+    \item[(b)] $\forall x \exists y (x = y^2)$
+    \item[(c)] $\exists x \forall y (xy=0) $
+    \item[(d)] $\exists x \exists y (x + y \neq y + x) $
+\end{itemize}
 
-    
+
 \end{problem}
 
 
