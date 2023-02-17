@@ -1,0 +1,114 @@
+\documentclass{article}
+
+\usepackage{url}
+ 
+\usepackage{geometry} 
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\olsi}[1]{\,\overline{\!{#1}}} % overline short italic
+
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{definition}[2][Definition]{\begin{trivlist}
+    \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+
+\title{Problem Set 5\\CS/MATH 113 Discrete Mathematics}
+\author{Habib University | Spring 2023}
+\date{Week 06}
+\maketitle
+
+\section{Problems}
+
+\begin{problem}{1}[Chapter 2.1, Question 12]
+Determine whether these statements are true or false.
+\begin{enumerate}[(a)]
+    \item $ \phi \in \{\phi\}$
+    \item $ \phi \in \{ \phi,\{\phi\} \}$
+    \item $ \{ \phi \} \in \{ \phi \} $
+    \item $ \{ \phi \} \in \{\{ \phi \}\} $
+    \item $ \{ \phi \} \subset \{ \phi, \{\phi \} \} $
+    \item $ \{ \{ \phi \} \} \subset \{ \phi, \{ \phi \}\} $
+    \item $ \{ \{ \phi \} \} \subset \{ \{\phi \}, \{ \phi \}\} $
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{2}[Chapter 2.1, Question 23]
+Find the power set of these sets where $a$ and $b$ are distinct elements.
+\begin{enumerate}[(a)]
+    \item $\{a\}$
+    \item $\{a,b\}$
+    \item $\{ \phi, \{ \phi \}\}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3}[Chapter 2.1, Question 24]
+Can you conclude that $A = B$ if $A$ and $B$ are two sets with the same power set ?
+\end{problem}
+\begin{problem}{4}[Chapter 2.1, Question 25]
+How many elements does each of these sets have where $a$ and $b$ are distinct elements ?
+\begin{enumerate}[(a)]
+    \item $ \mathcal{P}(\{a,b,\{a,b\}\})$
+    \item $ \mathcal{P}(\{\phi,a,\{a\}, \{\{a\} \}\})$
+    \item $ \mathcal{P}(\mathcal{P}(\phi))$
+\end{enumerate}
+\end{problem}
+\begin{problem}{5}[Chapter 2.1, Question 27]
+Prove that $ \mathcal{P}(A) \subseteq \mathcal {P}(B)$ if and only if $ A \subseteq B$
+\end{problem}
+\begin{problem}{6}[Chapter 2.1, Question 28]
+Show that if $A \subseteq C$ and $ B \subseteq D$, then $ A \times B \subseteq C \times D$
+\end{problem}
+\begin{problem}{7}[Chapter 2.1, Question 29]
+Let $A = \{a,b,c,d\}$ and $B = \{x,y\}$. Find
+\begin{enumerate}[(a)]
+    \item $ A \times B$
+    \item $ B \times A$
+\end{enumerate}
+\end{problem}
+\begin{problem}{8}[Chapter 2.1, Question 40]
+Show that $ A \times B \neq B \times A$, when $A$ and $B$ are nonempty, unless $ A = B$
+\end{problem}
+\begin{problem}{9}[Chapter 2.1, Question 44]
+Prove or disprove that if $A,B$, and $C$ are nonempty sets, and $A \times B = B \times C$, then $B=C$
+\end{problem}
+\begin{problem}{10}[Chapter 2.2, Question 5]
+Prove the complementation law in Table 1 by showing that $ \bar{\bar{A}} = A$
+\end{problem}
+\begin{problem}{11}[Chapter 2.2, Question 11]
+Let $A$ and $B$ sets. Prove the commutative laws from Table 1 by showing that
+\begin{enumerate}[(a)]
+    \item $A \cup B = B \cup A$
+    \item $A \cap B = B \cap A$
+\end{enumerate}
+\end{problem}
+\begin{problem}{12}[Chapter 2.2, Question 19]
+Show that if $A,B,$ and $C$ are sets, then $ \olsi{A \cap B \cap C} = \bar{A} \cup \bar{B} \cup \bar{C}$
+\begin{enumerate}[(a)]
+    \item by showing each side is a subset of the other side
+    \item using a membership table.
+\end{enumerate}
+\end{problem}
+\begin{problem}{12}[Chapter 2.2, Question 36]
+Prove or disprove that for all sets $A,B$,and $C$ we have
+\begin{enumerate}[(a)]
+    \item $A \times (B \cup C) = (A \times B) \cup (A \times C)$
+    \item $A \times (B \cap C) = (A \times B) \cap (A \times C)$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{13}[Chapter 2.2, Question 50]
+ Show that if $A$ and $B$ are finite sets, then $ A \cup B$ is a finite set.
+\end{problem}
+\begin{problem}{14}[Chapter 2.2, Question 51]
+    Show that if $A$ is an infinite set, then whenever $B$ is a set, $ A \cup B$ is also an  infinite set.
+\end{problem}
+
+\end{document}
