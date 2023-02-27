@@ -1,0 +1,106 @@
+\documentclass{article}
+
+\usepackage{url}
+ 
+\usepackage{geometry} 
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\olsi}[1]{\,\overline{\!{#1}}} % overline short italic
+
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{definition}[2][Definition]{\begin{trivlist}
+    \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+
+\title{Problem Set 6\\CS/MATH 113 Discrete Mathematics}
+\author{Habib University | Spring 2023}
+\date{Week 07}
+\maketitle
+
+\section{Problems}
+
+\begin{problem}{1}[Chapter 2.3, Question 1]
+Why is $f$ not a function from $\mathbb{R}$ to $\mathbb{R}$ if 
+\begin{enumerate}[(a)]
+    \item $ f(x) = \frac{1}{x}$
+    \item $ f(x) = \sqrt{x}$
+    \item $ f(x) = \pm  \sqrt{(x^2 + 1)}$
+    
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{2}[Chapter 2.3, Question 12, 13]
+Determine whether each of these functions from $\mathbb{Z}$ to $\mathbb{Z}$ is one to one. Determine which functions are onto ?
+\begin{enumerate}[(a)]
+    \item $f(n) = n - 1$
+    \item $f(n) = n^2 + 1$
+    \item $f(n) = n^3 $
+    \item $f(n) = \lceil \frac{n}{2} \rceil $
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{3}[Chapter 2.3, Question 22]
+Determine whether each of these functions is a bijection from $\mathbb{R}$ to $\mathbb{R}$.
+    \begin{enumerate}[(a)]
+        \item $f(x) = -3x + 4$
+        \item $f(x) = -3x^2 + 7$
+        \item $f(x) = \frac{(x+1)}{(x+2)} $
+        \item $f(x) = x^5 + 1 $
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}{5}[Chapter 2.3, Question 24]
+Let $ f: \mathbb{R} \rightarrow \mathbb{R}$ and let $ f(x) > 0 $ for all $ x \in \mathbb{R}$. Show that $f(x)$ is strictly increasing if and only if the function $g(x) = \frac{1}{g(x)}$ is strictly decreasing. 
+\end{problem}
+
+
+\begin{problem}{6}[Chapter 2.3, Question 26]
+\begin{enumerate}[(a)]
+    \item Prove that a strictly increasing function from $\mathbb{R}$ to itself is one to one.
+    \item Give an example of an increasing function from $\mathbb{R}$ to itself is not one to one.
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}{7}[Chapter 2.3, Question 29]
+Show that the function $f(x) = \lvert x \rvert$ from the set of real numbers to the set of nonnegative real numbers is not invertible, but if the domain
+is restricted to the set of nonnegative real numbers, the resulting function is invertible.
+
+\end{problem}
+\begin{problem}{8}[Chapter 2.3, Question 33]
+Suppose that $g$ is a function from A to B and $f$ is a function from B to C.
+\begin{enumerate}[(a)]
+    \item Show that if both $f$ and $g$ are one-to-one functions,
+    then $f \circ g$ is also one-to-one.
+    \item Show that if both $f$ and $g$ are onto functions, then $f \circ g$
+    is also onto.
+\end{enumerate}    
+    
+\end{problem}
+\begin{problem}{9}[Chapter 2.3, Question 34]
+Suppose that $g$ is a function from A to B and $f$ is a function from B to C. Prove each of these statements
+    \begin{enumerate}[(a)]
+        \item If $f \circ g$ is onto, then $f$ must also be onto.
+        \item If $f \circ g$ is one-to-one, then $g$ must also be one-to-one.
+        \item If $f \circ g$ is a bijection, then $g$ is onto if and only if $f$ is one to one. 
+    \end{enumerate}    
+        
+\end{problem}
+\begin{problem}{10}[Chapter 2.3, Question 74]
+    Suppose that $f$ is a function from A to B, where A and B
+    are finite sets with $ \lvert A \rvert =  \lvert B \rvert$. Show that $f$ is one-to-one if
+    and only if it is onto.
+\end{problem}
+
+
+
+\end{document}
