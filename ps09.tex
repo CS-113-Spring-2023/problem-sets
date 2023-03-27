@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{url}
+ 
+\usepackage{geometry} 
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+\newtheorem{theorem}{Theorem}
+
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\olsi}[1]{\,\overline{\!{#1}}} % overline short italic
+
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{definition}[2][Definition]{\begin{trivlist}
+    \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+
+\title{Problem Set 9\\CS/MATH 113 Discrete Mathematics}
+\author{Habib University | Spring 2023}
+\date{Week 13}
+\maketitle
+
+\section{Problems}
+
+\begin{problem}{1}[Chapter 5.1, Question 5]
+Prove that $1^2 + 3^2 + 5^2 + \cdots + (2n+1)^2 \equiv (n+1)(2n+1)(2n+3)/3$ whenever $n$ is a nonnegative integer using induction.
+\end{problem}
+
+\begin{problem}{2}[Chapter 5.1, Question 21]
+Prove that $2^n > n^2$ if $n$ is an integer greater than 4 using induction.
+\end{problem}
+
+\begin{problem}{3}[Chapter 5.1, Question 32]
+    Prove that 3 divides $n^3+2n$ whenever $n$ is positive integer using induction.
+\end{problem}
+
+\begin{problem}{4}[Chapter 5.1, Question 40]
+    Prove that if $A_1, A_2, \cdots, A_n$ and $B$ are sets, then
+    $(A_1 \cap A_2 \cap \cdots \cap A_n) \cup B  \equiv (A_1 \cup B) \cap (A_2 \cup B) \cap \cdots \cap (A_n \cup B)$ using induction
+\end{problem}
+
+\begin{problem}{5}[Chapter 5.1, Question 50]
+    What is wrong with this ``proof''?
+    \begin{proof}
+    \begin{theorem}
+        For every positive integer $n$, $\sum_{i=1}^{n} i = (n+\frac{1}{2})^2 / 2$
+    \end{theorem}
+    \textit{Basis Step: } The formula is true for $n=1$
+    \newline
+    \textit{Inductive Step: } Suppose that $\sum_{i=1}^{n} i = (n+\frac{1}{2})^2 / 2$.
+    Then $\sum_{i=1}^{n+1} i = (\sum_{i=1}^{n} i) + (n+1)  $. By the inductive hypothesis, we have 
+    $\sum_{i=1}^{n+1} i = (n+\frac{1}{2})^2 / 2 + (n+1) = (n^2 + n + \frac{1}{4})/2 + n + 1 = (n^2 + 3n + \frac{9}{4})/2= (n+\frac{3}{2})^2 /2 = [(n+1)+\frac{1}{2}]^2 /2$, 
+    
+       
+    \end{proof}
+\end{problem}
+
+
+\end{document}
